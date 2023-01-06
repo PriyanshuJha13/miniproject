@@ -33,12 +33,12 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#" target="_blank" rel="noopener noreferrer">
                   Book Free Trial
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">
+                <a className="nav-link" href="#" target="_blank" rel="noopener noreferrer">
                   Purchase Course
                 </a>
               </li>
