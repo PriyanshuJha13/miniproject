@@ -57,19 +57,19 @@
 }
 
 .PhoneForm {
-  margin-top: 50px;
+  margin-top: 32px;
   width: 496px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 6%) 0px 3px 20px 0px;
   border-radius: 10px;
   flex-direction: unset;
-  padding: 6px 6px 6px 17px;
+  padding: 6px 6px 6px 3px;;
   font-size: 18px;
   font-weight: 600
 }
 .buttonStyle {
   width: auto;
-  height: 48px;
+  height: 40px;
   padding: 0px 32px;
   border-radius: 10px;
   background: rgb(159, 170, 232);

@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light" >
+function Navbar() {
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <div>
             <img
               src="https://champs-dashboard.s3.ap-south-1.amazonaws.com/web-assets/logo.png"
               alt="Logo"
@@ -13,7 +14,7 @@ class Navbar extends React.Component {
               height={48}
               className="d-inline-block align-text-top"
             />
-          </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,30 +28,21 @@ class Navbar extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+              <li className="nav-link active">
+                <Link to="/"> Home</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" target="_blank" rel="noopener noreferrer">
-                  Book Free Trial
-                </a>
+              <li className="nav-link">
+                <Link to="/bookfreetrial"> Book Free Trial Class</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" target="_blank" rel="noopener noreferrer">
-                  Purchase Course
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled"></a>
+              <li className="nav-link">
+                <Link to="/purchasecourse">Purchase Course</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    );
-  }
+    </div>
+  );
 }
 
 export default Navbar;
